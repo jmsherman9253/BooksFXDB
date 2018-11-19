@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="sample.Controller">
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <children>
+      <Button mnemonicParsing="false" onAction="#connectButtonHandler" prefHeight="26.0" prefWidth="162.0" text="Connect All" GridPane.columnSpan="2" />
+      <Button mnemonicParsing="false" onAction="#connectFirstNameHandler" prefHeight="26.0" prefWidth="101.0" text="First Name" GridPane.columnIndex="3" />
+      <Label fx:id="lblFirstName" prefHeight="18.0" prefWidth="226.0" text="First Name" GridPane.columnIndex="4" GridPane.columnSpan="2" />
+      <Label fx:id="lblLastName" prefHeight="18.0" prefWidth="264.0" text="Last Name" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+      <Button mnemonicParsing="false" onAction="#connectLastNameHandler" prefHeight="26.0" prefWidth="110.0" text="Last Name" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <Button mnemonicParsing="false" onAction="#connectAuthorIDHandler" prefHeight="26.0" prefWidth="122.0" text="Author ID" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <Button mnemonicParsing="false" onAction="#resetLabelsHandler" prefHeight="26.0" prefWidth="162.0" text="Reset Labels" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+      <Label fx:id="lblAuthorID" prefHeight="18.0" prefWidth="222.0" text="Author ID" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+      <TextField fx:id="txtSearch" prefHeight="26.0" prefWidth="198.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+      <Button mnemonicParsing="false" onAction="#searchIDHandler" prefHeight="26.0" prefWidth="111.0" text="Search ID's" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+      <Label fx:id="lblSearchFirst" prefHeight="18.0" prefWidth="223.0" text="Search First" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+      <Label fx:id="lblSearchLast" text="Search Last" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+      <Label fx:id="lblSearchID" text="Search ID" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="6" />
+      <Label fx:id="lblMessage" alignment="CENTER" prefHeight="18.0" prefWidth="328.0" text="Message Center" textAlignment="CENTER" GridPane.columnSpan="3" GridPane.rowIndex="2" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</GridPane>
